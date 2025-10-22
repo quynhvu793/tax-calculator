@@ -19,7 +19,7 @@ jobs:
           cache: "maven"
 
       - name: Run the tests
-        run: mvn -B clean test -Dsurefire.testFailureIgnore=true
+        run: mvn -B clean test || true
 
       - name: Upload test result to Jira (Xray)
         env:
