@@ -24,7 +24,7 @@ public class TaxCalculator {
             rate = 0.35;
         }
 
-        return income + rate;
+        return income * rate;
     }
 
     public static void main(String[] args) {
